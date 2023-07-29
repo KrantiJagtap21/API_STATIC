@@ -15,7 +15,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class CommonUtilityMethod {
 		public static void EvidenceCreator(String Filename, String RequestBody, String ResponseBody, int StatusCode)
 				throws IOException {
-			File TextFile = new File(""H:\\API\\Evidence\\TestNG\\" + Filename + ".txt");
+			File TextFile = new File(""H:\\API\\Evidence\\" + Filename + ".txt");
 			System.out.println("New blank text file of name :" + TextFile.getName());
 
 			FileWriter dataWrite = new FileWriter(TextFile);
