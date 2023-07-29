@@ -17,7 +17,6 @@ public class CommonUtilityMethod {
 				throws IOException {
 			File TextFile = new File(""H:\\API\\Evidence\\" + Filename + ".txt");
 			System.out.println("New blank text file of name :" + TextFile.getName());
-
 			FileWriter dataWrite = new FileWriter(TextFile);
 			dataWrite.write("Request Body is : " + RequestBody + "\n\n");
 			dataWrite.write("Status Code is : " + StatusCode + "\n\n");
