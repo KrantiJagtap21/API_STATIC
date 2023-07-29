@@ -15,7 +15,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class CommonUtilityMethod {
 		public static void EvidenceCreator(String Filename, String RequestBody, String ResponseBody, int StatusCode)
 				throws IOException {
-			File TextFile = new File("H:\\MSsquare\\API\\RestAssured\\Evidence\\" + Filename + ".txt");
+			File TextFile = new File(""H:\\API\\Evidence\\TestNG\\" + Filename + ".txt");
 			System.out.println("New blank text file of name :" + TextFile.getName());
 
 			FileWriter dataWrite = new FileWriter(TextFile);
@@ -30,7 +30,7 @@ public class CommonUtilityMethod {
 		public static ArrayList<String> ReadDataExcel(String sheetname, String TestCaseName) throws IOException {
 			ArrayList<String> ArrayData = new ArrayList<String>();
 			// create the object of file input stream to locate the excel file
-			FileInputStream Fis = new FileInputStream("H:\\MSsquare\\API\\RestAssured\\RestAssuredDataDrivenAll.xlsx");
+			FileInputStream Fis = new FileInputStream("H:\\API\\RestAssuredDataDrivenAll.xlsx");
 			// Step2: Open the Excel file by creating the object XSSFWorkbook
 			XSSFWorkbook WorkBook = new XSSFWorkbook(Fis);
 			// Step3: Open the Desired Excel Sheet
